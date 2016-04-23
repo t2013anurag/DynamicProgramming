@@ -16,5 +16,4 @@ int main ()
   cout<<"Enter a number : \n";
   cin>>n;
   cout<<"The fibonacci number is : "<<fibo(n);
-
 }
