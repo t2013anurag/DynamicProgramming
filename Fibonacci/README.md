@@ -3,8 +3,7 @@
 
 Question 1 : Tabulation 
 
-	The tabulated program for a given problem builds a table in 
-	bottom up fashion and returns the last entry from table.
+The tabulated program for a given problem builds a table in bottom up fashion and returns the last entry from table.
 
     int fib(int n)
 	{
@@ -19,7 +18,7 @@ Question 1 : Tabulation
 
 Question 2 : Memoization
 	
-	The memoized program for a problem is similar to the recursive 
+The memoized program for a problem is similar to the recursive 
 	version with a small modification that it looks into a lookup 
 	table before computing solutions. We initialize a lookup array 
 	with all initial values as NIL. Whenever we need solution to a 
