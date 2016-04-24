@@ -1,12 +1,12 @@
 /*Created by Anurag*/
 
 #include<bits/stdc++.h>
- # define r 3
- # define c 3
- # define max_k 1000
-using namespace std;
-int dp[3][3][max_k]; 
+# define r 3
+# define c 3
+# define max_k 1000
 
+using namespace std;
+int dp[r][c][max_k]; 
 
 int pathCountRecursion(int mat[][c], int m, int n, int k)
 {
@@ -37,24 +37,18 @@ int pathCount(int mat[][c], int k)
 
 int main() 
 {
-	int k;//,r,c;
+	int k;
 	cout<<"Enter the number of coins ";
 	cin>>k;
 	// cout<<"Enter the number of rows and columns ";
 	// cin>>r>>c;
-	//int mat[r][c];
-	// #define r
-	// #define c
+	int mat[r][c];
 	cout<<"Enter the elements ";
-	// for(int i = 0; i<r; i++)
-	// 	for(int j=0; j<c; j++)
-	// 	{
-	// 		cin>>mat[i][j];
-	// 	}
-	int mat[r][c] = { {1, 2, 3},
-                      {4, 6, 5},
-                      {3, 2, 1}
-                  };
+	for(int i = 0; i<r; i++)
+		for(int j=0; j<c; j++)
+		{
+			cin>>mat[i][j];
+		}
 	cout<<"Number of paths "<<pathCount(mat, k);
 	return 0; 
 }
