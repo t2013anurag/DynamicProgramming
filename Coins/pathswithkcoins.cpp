@@ -43,6 +43,10 @@ int main()
 	// cout<<"Enter the number of rows and columns ";
 	// cin>>r>>c;
 	int mat[r][c];
+//  int mat[R][C] = { {1, 2, 3},
+//                     {4, 6, 5},
+//                     {3, 2, 1}
+//                 };
 	cout<<"Enter the elements ";
 	for(int i = 0; i<r; i++)
 		for(int j=0; j<c; j++)
